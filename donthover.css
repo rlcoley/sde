@@ -1,0 +1,13 @@
+
+.donthover{
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  margin-left: 50vh
+}
+
+p{
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
