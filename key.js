@@ -4,4 +4,5 @@ document.addEventListener('keypress', (event) => {
    keyName = event.key;
   // alert(keyName);
   h1.innerHTML = keyName;
+  
 });
