@@ -1,11 +1,12 @@
 var userName = document.getElementById('userName');
 var email = document.getElementById('email');
-var pass = document.getElementById('pass');
+var pass = document.getElementById('pass').value;
 var submit = document.getElementById("submit")
 
 submit.addEventListener('click', checkForNumber);
 function checkForNumber() {
-    if (pass === '12345678') {
+    console.log(pass)
+    if (parseInt(pass) == 12345678) {
       alert("good")
     }else {
       alert("Password invaild");
