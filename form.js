@@ -8,7 +8,7 @@ function checkForNumber() {
     if (pass === '12345678') {
       alert("good")
     }else {
-      alert("Password invaild")
+      alert("Password invaild");
   }
 
 
