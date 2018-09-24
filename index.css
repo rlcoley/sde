@@ -1,0 +1,20 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+  margin-left: 500px;
+  margin-top: 20px;
+}
+
+#rightText{
+  position: relative;
+  top: 20px;
+  left: -60px;
+}
+
+#iAmText{
+  position: relative;
+  left: 60px;
+  bottom: 18px
+}
