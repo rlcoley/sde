@@ -1,21 +1,35 @@
-var userName = document.getElementById('userName');
-var email = document.getElementById('email');
-var pass = document.getElementById('pass').value;
-var submit = document.getElementById("submit")
+var username = document.getElementById("username")
+var password = document.getElementById("password");
+var submit = document.getElementById("submit");
 
-submit.addEventListener('click', checkForNumber);
-function checkForNumber() {
-    console.log(pass)
-    if (parseInt(pass) == 12345678) {
-      alert("good")
-    }else {
-      alert("Password invaild");
+
+submit.addEventListener('click', checkForm)
+
+function checkForm() {
+  if (checkPassword() && checkUsername() ) {
+    alert("You're in, Welcome to the Eye")
+  }else {
+    alert("We don't want you")
   }
+}
 
 
-    // if (userName.includes(1,2,3,5,6,7,8,9,0 ) == false ) {
-    //   alert("Needs Number")
-    // }
+function checkPassword() {
+  if (password.value == 1234) {
+    return true
+  }else {
+      // console.log('password is incorrect');
+  }
+}
 
-
+function checkUsername() {
+  var splitUser = username.value.split("")
+  for (let i=0; i<splitUser.length; i++) {
+    if (splitUser[i] == 1 || splitUser[i] == 2 || splitUser[i] == 3 || splitUser[i] == 4 || splitUser[i] == 5 || splitUser[i] == 6 || splitUser[i] == 7 || splitUser[i] == 8 || splitUser[i] == 9 || splitUser[i] == 0) {
+      return true
+    }else {
+      // console.log("this is invaild");
+    }
+  }
+  // console.log(splitUser);
 }

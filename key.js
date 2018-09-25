@@ -4,5 +4,8 @@ document.addEventListener('keypress', (event) => {
    keyName = event.key;
   // alert(keyName);
   h1.innerHTML = keyName;
-  
+
+  // Combine all keys pressed
+  // h1.innerHTML += keyName;
+
 });
